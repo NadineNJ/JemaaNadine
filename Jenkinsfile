@@ -16,8 +16,8 @@ pipeline {
 
         stage('Build Maven') {
             steps {
-                dir('backend') {
-                    sh 'mvn clean package -DskipTests'
+                dir('backend/backend') {
+                    bat 'mvn clean package -DskipTests'
                 }
             }
         }
